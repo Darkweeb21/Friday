@@ -34,7 +34,7 @@ except Exception as e:
     print(f"Error initializing Groq client: {e}")
     sys.exit(1)
 
-CHAT_LOG_PATH = os.path.join("C:\\Users\\himan\\OneDrive\\Desktop\\Projects\\FRIDAY\\Data", "ChatLog.json")
+CHAT_LOG_PATH = os.path.join("Data", "ChatLog.json")
 
 # Ensure Data directory exists
 os.makedirs(os.path.dirname(CHAT_LOG_PATH), exist_ok=True)
