@@ -39,7 +39,7 @@ def tts(text: str, func=lambda r=None: True) -> bool:
 
         # Initialize and play audio
         pygame.mixer.init()
-        pygame.mixer.music.load(os.path.join("C:\\Users\\himan\\OneDrive\\Desktop\\Projects\\FRIDAY\\Data", "speech.mp3"))
+        pygame.mixer.music.load(os.path.join("Data", "speech.mp3"))
         pygame.mixer.music.play()
 
         # Wait for playback to complete
