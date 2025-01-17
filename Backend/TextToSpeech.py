@@ -12,7 +12,7 @@ assistant_voice = env_vars.get("AssistantVoice", "en-AU-NatashaNeural")
 
 async def text_to_audio(text: str) -> None:
     """Convert text to audio file using edge-tts."""
-    file_path = os.path.join("C:\\Users\\himan\\OneDrive\\Desktop\\Projects\\FRIDAY\\Data", "speech.mp3")
+    file_path = os.path.join("Data", "speech.mp3")
 
     # Clean up existing file
     if os.path.exists(file_path):
