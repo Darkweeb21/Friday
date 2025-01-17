@@ -27,6 +27,19 @@ Friday is a versatile AI-powered personal assistant designed to simplify daily t
    ```bash
    touch .env
    ```
+4. Add the following variables to the `.env` file:
+   ```env
+   CohereAPIkey= your api key
+   Username= your username
+   Assistantname= your ai name
+   GROQ_API_KEY= your api key
+   InputLangauge=en
+   Assistantvoice=en-AU-NatashaNeural
+   HuggingFaceAPIKey= your api key
+   APP_DIRECTORY_PATH=
+   DATA_DIRECTORY_PATH=
+   ```
+   > **Note:** Replace the placeholder values with your actual API keys and correct directory paths.
 
 ## Usage
 1. Run the assistant:
@@ -38,6 +51,10 @@ Friday is a versatile AI-powered personal assistant designed to simplify daily t
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
 
+## License
+This project is licensed under the MIT License.
+
+---
 
 **Developed with passion and innovation.**
 
