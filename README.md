@@ -27,15 +27,6 @@ Friday is a versatile AI-powered personal assistant designed to simplify daily t
    ```bash
    touch .env
    ```
-4. Add the following variables to the `.env` file:
-   ```env
-   OPENAI_API_KEY=your_openai_api_key
-   SEARCH_API_KEY=your_search_api_key
-   IMAGE_GEN_API_KEY=your_image_generation_api_key
-   APP_DIRECTORY_PATH=/path/to/your/applications
-   DATA_DIRECTORY_PATH=/path/to/your/data
-   ```
-   > **Note:** Replace the placeholder values with your actual API keys and correct directory paths.
 
 ## Usage
 1. Run the assistant:
