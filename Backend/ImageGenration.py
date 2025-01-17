@@ -13,7 +13,7 @@ load_dotenv()
 def setup_data_file():
     """Create necessary directories and data file if they don't exist"""
     # Create directory structure with the new path
-    data_dir = r"C:\Users\himan\OneDrive\Desktop\Projects\FRIDAY\Frontend\Files"
+    data_dir = r"Frontend\Files"
     os.makedirs(data_dir, exist_ok=True)
 
     # Create ImageGeneration.data file if it doesn't exist
@@ -34,7 +34,7 @@ def get_api_key():
 
 def open_images(prompt: str) -> None:
     """Open generated images using PIL"""
-    folder_path = r"C:\Users\himan\OneDrive\Desktop\Projects\FRIDAY\Data"
+    folder_path = r"Data"
     prompt = prompt.replace(" ", "_")
     files = [f"{prompt}{i}.jpg" for i in range(1, 5)]
 
@@ -79,7 +79,7 @@ async def generate_images(prompt: str) -> None:
 
     try:
         image_bytes_list = await asyncio.gather(*tasks)
-        folder_path = r"C:\Users\himan\OneDrive\Desktop\Projects\FRIDAY\Data"
+        folder_path = r"Data"
         os.makedirs(folder_path, exist_ok=True)
 
         for i, image_bytes in enumerate(image_bytes_list):
