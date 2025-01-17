@@ -55,8 +55,8 @@ html_code = html_code.replace("recognition.lang = '';", f"recognition.lang = '{i
 # Use os.path.join for consistent path handling
 current_dir = os.getcwd()
 data_dir = os.path.join(current_dir, "Data")
-voice_html_path = os.path.join("C:\\Users\\himan\\OneDrive\\Desktop\\Projects\\FRIDAY\\Data", "Voice.html")
-temp_dir_path = os.path.join("C:\\Users\\himan\\OneDrive\\Desktop\\Projects\\FRIDAY\\Frontend", "Files")
+voice_html_path = os.path.join("Data", "Voice.html")
+temp_dir_path = os.path.join("Frontend", "Files")
 
 # Ensure directories exist
 os.makedirs(data_dir, exist_ok=True)
