@@ -63,18 +63,18 @@ def content(Topic):
                 answer += chunk.choices[0].delta.content
 
         # Clean response and save to chat log
-        answer = answer.replace("<\s>", "")
+        answer = answer.replace("<\\s>", "")
         messages.append({"role": "system", "content": answer})
         return answer
 
     Topic = Topic.replace("Content", " ")
     ContentByAI = ContentWriterAI(Topic)
 
-    with open(rf"C:\\Users\\himan\\OneDrive\\Desktop\\Projects\\FRIDAY\\Data\\{Topic.lower().replace(' ','')}.txt", "w", encoding="utf-8") as file:
+    with open(rf"C:\Users\himan\Desktop\Friday\Backend\Data{Topic.lower().replace(' ','')}.txt", "w", encoding="utf-8") as file:
         file.write(ContentByAI)
         file.close()
 
-    OpenNotepad(rf"C:\\Users\\himan\\OneDrive\\Desktop\\Projects\\FRIDAY\\Data\\{Topic.lower().replace(' ','')}.txt")
+    OpenNotepad(rf"C:\Users\himan\Desktop\Friday\Backend\Data{Topic.lower().replace(' ','')}.txt")
     return True
 
 def YoutubeSearch(Topic):
